@@ -1,0 +1,19 @@
+#LOGIN:ESTRUCTRURA DEL MENSAJE <login>usaurio::contrasenia
+cliente.conn.send(f"<error>{respuesta['mensaje']}|".encode("utf-8"))
+
+#CHAT GENERAL: ESTRUCTURA DEL MENSAJE <general>chat_id::contenido
+
+
+#CHAT PRIVADO: ESTRCUTURA DEL MENSAJE: <privado>destino_id::contenido
+
+        
+#CHAT GRUPO: ESTRCUTURA DEL MENSAJE: <grupo>grupo_id::contenido
+enviar_a_usuario(cliente.id,f"<error>{respuesta['mensaje']}|")
+
+#CHAT CANAL: ESTRCUTURA DEL MENSAJE: <canal>canal_id::contenido
+enviar_a_usuario(cliente.id,f"<error>{respuesta['mensaje']}|")
+        
+#PEDIR HISTORIAL: ESTRUCTURA DEL MENSAJE: <pedir_historial>tipo_de_chat::destino_id
+paquetes.append(f"<historial>{tipo}::{destino_id}::{fila['usuario']}::fila{['contenido']}|")
+cliente.conn.sendall("".join(paquetes).encode("utf-8"))
+cliente.conn.send(f"<error>{respuesta['mensaje']}|".encode("utf-8"))

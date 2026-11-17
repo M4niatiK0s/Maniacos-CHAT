@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>806</width>
+    <height>549</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>741</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLineEdit" name="inp_ip">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>40</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>IP</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inp_puerto">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>100</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PUERTO</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inp_usuario">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>150</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>USUARIO</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inp_password">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>200</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CONTRASEÑA</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="combo_avatar">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>250</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>avatar_1.png</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>avatar_2.png</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>avatar_3.png</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>avatar_4.png</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>avatar_5.png</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>avatar_6.png</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>avatar_7.png</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>avatar_8.png</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="btn_conectar">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>320</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Conectar</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Direccion IP</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>100</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Puerto</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>150</y>
+        <width>321</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nombre de Usuario</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>200</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Contraseñia</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>260</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Imagen de Perfil</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>691</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>General</string>
+       </attribute>
+       <widget class="QListWidget" name="lista_general">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>671</width>
+          <height>291</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="inp_msg_gen">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>310</y>
+          <width>541</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_enviar_gen">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>310</y>
+          <width>101</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Enviar</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Privado</string>
+       </attribute>
+       <widget class="QListWidget" name="lista_privada">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>10</y>
+          <width>541</width>
+          <height>281</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="inp_msg_priv">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>300</y>
+          <width>113</width>
+          <height>32</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_enviar_priv">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>300</y>
+          <width>101</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Enviar</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="combo_contactos">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_avatar">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>160</y>
+          <width>81</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>58</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>81</width>
+          <height>81</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Grupos</string>
+       </attribute>
+       <widget class="QLineEdit" name="inp_nombre_grupo">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>200</y>
+          <width>113</width>
+          <height>32</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="lista_grupo">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>10</y>
+          <width>521</width>
+          <height>291</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="inp_msg_grup">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>310</y>
+          <width>411</width>
+          <height>32</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_enviar_grupo">
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>310</y>
+          <width>88</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Enviar</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_crear_grupo">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>250</y>
+          <width>101</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Crear</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="combo_mis_grupos">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>141</width>
+          <height>32</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Canales</string>
+       </attribute>
+       <widget class="QLineEdit" name="inp_nombre_canal">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>113</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Canal a crear</string>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="lista_canales">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>10</y>
+          <width>511</width>
+          <height>291</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="inp_msg_can">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>310</y>
+          <width>391</width>
+          <height>32</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_enviar_can">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>310</y>
+          <width>88</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Enviar</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_crear_canal">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>120</y>
+          <width>88</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Crear Canal</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_suscribir">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>240</y>
+          <width>88</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Suscribir</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="combo_mis_canales">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>190</y>
+          <width>87</width>
+          <height>32</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>806</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
