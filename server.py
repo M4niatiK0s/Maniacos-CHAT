@@ -82,10 +82,10 @@ def procesar_comando(cliente: Cliente, mensaje: str):
                         usuarios_activos.append(f"{c.id}::{c.name}::{c.avatar_id}")
                 
                 paquete_usuarios = f"<usuarios_activos>{','.join(usuarios_activos)}|"
+                
                 for c in list_of_clients:
                     if c.id is not None:
                         enviar_a_usuario(c.id, paquete_usuarios)
-
                 resp_grupos = db.obtener_grupos_usuario(cliente.id)
                 if resp_grupos["ok"] and resp_grupos["datos"]:
                     for fila in resp_grupos["datos"]:

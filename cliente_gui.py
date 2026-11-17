@@ -149,7 +149,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         msg = self.inp_msg_priv.text()
         if dest_id and msg:
             self.enviar_red(f"<privado>{dest_id}::{msg}|")
-            self.lista_privada.addItem(f"Tú (para {seleccion}): {msg}")
+            self.lista_privada.addItem(f"Tú: {msg}")
+            #self.lista_privada.addItem(f"Tú (para {seleccion}): {msg}")
             self.inp_msg_priv.clear()
 
     def crear_grupo(self):
@@ -240,8 +241,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             nombre_avatar = f"avatar_{avatar_id}.png"
             ruta = os.path.join(carpeta,nombre_avatar)
             if os.path.exists(ruta):
-                pixmap = QPixmap(ruta)
-                
+                pixmap = QPixmap(ruta)   
             if not pixmap.isNull():
                 self.label_avatar.setPixmap(pixmap)
             else:
@@ -249,7 +249,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 if os.path.exists(carpeta):
                     print("[Debug Avatar] Archivos reales en Avatar1:", os.listdir(carpeta))
                 self.label_avatar.setText("Sin foto")
-            
+
         else:
             self.label_avatar.clear()
                 
@@ -314,7 +314,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         elif mensaje.startswith("<privado>"):
             datos = mensaje.replace("<privado>", "").split("::")
             if len(datos) >= 3:
-                self.lista_privada.addItem(f"[{datos[1]}] te susurra: {datos[2]}")
+                self.lista_privada.addItem(f"{datos[1]} te susurra: {datos[2]}")
 
         elif mensaje.startswith("<usuarios_activos>"):
             self.combo_contactos.blockSignals(True)
