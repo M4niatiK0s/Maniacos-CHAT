@@ -209,16 +209,6 @@ def procesar_comando(cliente: Cliente, mensaje: str):
                 cliente.conn.sendall("".join(paquetes).encode("utf-8"))
             else:
                 cliente.conn.send(f"<error>{respuesta['mensaje']}|".encode("utf-8"))
-             
-        
-
-
-
-
-
-
-
-
 
 def setName(connection, name:str):
     for client in list_of_clients:

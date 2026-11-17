@@ -100,6 +100,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         password = self.inp_password.text().strip()
         avatar_text = self.combo_avatar.currentText()
         avatar_id = avatar_text.replace("avatar_", "").replace(".png", "")
+        
+        if host != "3.149.102.2" or port != "3025":
+            QMessageBox.warning(self, "IP Incorrecta o Puerto Incorrecto", "Poner datos correctos")
+            return
 
         if not (host and port.isnumeric() and user and password):
             QMessageBox.warning(self, "Datos faltantes", "Por favor completa todos los campos.")
