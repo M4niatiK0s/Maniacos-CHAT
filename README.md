@@ -94,7 +94,7 @@ Dado que **Git** y **Python 3 (versión 3.9 o superior)** no vienen preinstalado
 3. Crea y activa el entorno virtual:
    ```bash
    python3 -m venv venv
-   source venv/bin/activate
+   source ./venv/bin/activate
    ```
 4. Actualiza `pip` e instala las dependencias:
    ```bash
