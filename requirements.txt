@@ -1,0 +1,15 @@
+# ==============================================================================
+# REQUISITO PREVIO DEL SISTEMA:
+# Es obligatorio tener instalado Python 3.9 o superior antes de instalar
+# estas dependencias (no viene incluido por defecto en Windows ni macOS).
+# Descarga oficial: https://www.python.org/downloads/
+# ==============================================================================
+
+# Interfaz grafica del cliente (Windows, GNU/Linux y macOS)
+PyQt5
+
+# Conexion del servidor con Microsoft SQL Server
+mssql-python
+
+# Lectura de credenciales desde el archivo .env
+python-dotenv
