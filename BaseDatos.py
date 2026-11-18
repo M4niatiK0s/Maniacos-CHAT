@@ -1,9 +1,18 @@
-import hashlib
-import hmac
-import os
-import secrets
-from datetime import datetime
+"""
+@file BaseDatos.py
+@author Maniacos (maniatikoscibernetikos@gmail.com)
+@boletas: 2025640260,2025640251, 2025640030 
+@brief Lógica del cliente para el wassap
+@brief Programa para conectarse con la base de datos y manejar los querys de consulta.
+@practica practica_1
+@version 0.1
+@date 2026-11-18
 
+@copyright Copyright (c) 2026
+"""
+
+import os
+from datetime import datetime
 import mssql_python
 from dotenv import load_dotenv
 

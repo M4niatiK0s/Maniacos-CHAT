@@ -1,3 +1,17 @@
+"""
+@file cliente_gui.py
+@author Maniacos (maniatikoscibernetikos@gmail.com)
+@boletas: 2025640260,2025640251, 2025640030 
+@brief Lógica del cliente para el wassap
+@practica practica_1
+@version 0.1
+@date 2026-11-18
+
+@copyright Copyright (c) 2026
+"""
+
+
+
 import sys
 import socket
 import os
