@@ -59,7 +59,7 @@ Dado que **Git** y **Python 3 (versión 3.9 o superior)** no vienen preinstalado
    ```
 3. Clona el repositorio y entra a la carpeta del proyecto:
    ```powershell
-   git clone [https://github.com/M4niatiK0s/Maniacos-CHAT.git](https://github.com/M4niatiK0s/Maniacos-CHAT.git)
+   git clone [https://github.com/M4niatiK0s/Maniacos-CHAT.git]
    cd Maniacos-CHAT
    ```
 4. Crea y activa un entorno virtual de Python:
@@ -88,7 +88,7 @@ Dado que **Git** y **Python 3 (versión 3.9 o superior)** no vienen preinstalado
    ```
 2. Clona el repositorio y entra a la carpeta del proyecto:
    ```bash
-   git clone [https://github.com/M4niatiK0s/Maniacos-CHAT.git](https://github.com/M4niatiK0s/Maniacos-CHAT.git)
+   git clone [https://github.com/M4niatiK0s/Maniacos-CHAT.git]
    cd Maniacos-CHAT
    ```
 3. Crea y activa el entorno virtual:
@@ -116,7 +116,7 @@ Dado que **Git** y **Python 3 (versión 3.9 o superior)** no vienen preinstalado
    ```
 2. Clona el repositorio y entra a la carpeta del proyecto:
    ```bash
-   git clone [https://github.com/M4niatiK0s/Maniacos-CHAT.git](https://github.com/M4niatiK0s/Maniacos-CHAT.git)
+   git clone [https://github.com/M4niatiK0s/Maniacos-CHAT.git]
    cd Maniacos-CHAT
    ```
 3. Crea y activa el entorno virtual:

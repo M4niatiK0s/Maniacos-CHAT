@@ -7,9 +7,3 @@
 
 # Interfaz grafica del cliente (Windows, GNU/Linux y macOS)
 PyQt5
-
-# Conexion del servidor con Microsoft SQL Server
-mssql-python
-
-# Lectura de credenciales desde el archivo .env
-python-dotenv
