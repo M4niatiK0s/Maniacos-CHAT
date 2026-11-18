@@ -382,7 +382,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
                 if not existe:
                     self.combo_mis_canales.addItem(f"{nombre} (ID: {canal_id})")
-                    self.enviar_red(f"<pedir_historial>canal::{canal_id}|")
+                    self.actualizar_vista_canal()
 
         elif mensaje.startswith("<grupo>"):
             datos = mensaje.replace("<grupo>", "").split("::")
