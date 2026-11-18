@@ -24,9 +24,9 @@ Dado que **Git** y **Python 3 (versión 3.9 o superior)** no vienen preinstalado
 
 ### 1. Windows
 1. **Instalar Git:**
-   - Descarga el instalador desde [git-scm.com/downloads](https://git-scm.com/downloads), ejecútalo y avanza con **Next** hasta finalizar (o abre PowerShell y ejecuta `winget install --id Git.Git -e --source winget`).
+   - Descarga el instalador desde https://git-scm.com/downloads, ejecútalo y avanza con **Next** hasta finalizar (o abre PowerShell y ejecuta `winget install --id Git.Git -e --source winget`).
 2. **Instalar Python 3:**
-   - Descarga el instalador oficial desde [python.org/downloads](https://www.python.org/downloads/).
+   - Descarga el instalador oficial desde https://www.python.org/downloads/ .
    - Al abrir el instalador, **marca obligatoriamente la casilla "Add Python to PATH"** en la parte inferior antes de hacer clic en **Install Now**.
 
 ### 2. GNU/Linux (Ubuntu, Debian, Parrot OS y derivados)
@@ -41,7 +41,7 @@ Dado que **Git** y **Python 3 (versión 3.9 o superior)** no vienen preinstalado
 1. **Instalar Git:**
    - Abre la aplicación **Terminal** (`Cmd + Espacio`, escribe `Terminal` y presiona `Enter`) y ejecuta `git --version`. Si no está instalado, macOS mostrará una ventana para instalar las *Command Line Tools*; haz clic en **Instalar**.
 2. **Instalar Python 3:**
-   - Descarga el instalador para macOS desde [python.org/downloads](https://www.python.org/downloads/) o instálalo mediante Homebrew ejecutando:
+   - Descarga el instalador para macOS desde https://www.python.org/downloads/ o instálalo mediante Homebrew ejecutando:
      ```bash
      brew install python
      ```
@@ -159,13 +159,4 @@ Dado que **Git** y **Python 3 (versión 3.9 o superior)** no vienen preinstalado
 
 ---
 
-## Notas Técnicas del Servidor (Referencia)
-
-El componente servidor (`server.py` + `BaseDatos.py`) se ejecuta de forma independiente en el servidor Linux remoto del curso bajo la cuenta del equipo (`maniaco`) escuchando en `0.0.0.0:3025` mediante:
-
-```bash
-nohup python3 server.py > server.log 2>&1 &
-```
-
-La configuración de conexión a SQL Server se gestiona en el servidor mediante variables de entorno en un archivo privado `.env` (excluido del repositorio público por seguridad).
 
